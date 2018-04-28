@@ -1,19 +1,76 @@
-<div id="carouselExampleSlidesOnly" class="parallax carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      1
-      <!--<img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">-->
-    </div>
-    <div class="carousel-item">
-      2
-      <!--<img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">-->
-    </div>
-    <div class="carousel-item">
-      3
-      <!--<img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">-->
+<div class="bgimg-1">
+  <div class="caption">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <mat-radio-group>
+            <mat-radio-button value="1">Option 1</mat-radio-button>
+            <mat-radio-button value="2">Option 2</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4">
+           <input type="text" class="form-control" matInput placeholder="From">
+         </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" matInput placeholder="From">
+        </div>
+        <div class="col-sm-2">
+          <div class="input-group">
+
+            <input class="form-control" [matDatepicker]="myDatepicker">
+            <div class="input-group-append " style="background: white">
+              <mat-datepicker-toggle [for]="myDatepicker"></mat-datepicker-toggle>
+              <mat-datepicker #myDatepicker></mat-datepicker>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="input-group">
+            <input class="form-control" [matDatepicker]="myDatepicker2">
+            <div class="input-group-append " style="background: white">
+              <mat-datepicker-toggle [for]="myDatepicker2"></mat-datepicker-toggle>
+              <mat-datepicker #myDatepicker2></mat-datepicker>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<!--<p>-->
-  <!--Dashboard-->
-<!--</p>-->
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Parallax Demo</h3>
+  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">COOL!</span>
+  </div>
+</div>
